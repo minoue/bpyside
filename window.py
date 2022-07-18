@@ -10,7 +10,6 @@ class MyWindow(QtWidgets.QWidget):
         self.setWindowTitle("Sample PySide2 Window")
         self.setWindowFlags(
             QtCore.Qt.Tool | QtCore.Qt.WindowStaysOnTopHint)
-        self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
 
         self.initUI()
         self.show()
