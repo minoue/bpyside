@@ -2,6 +2,8 @@
 
 A tiny template script for PySide window in Blender
 
+For more advanced setup, you may take a look [blender_pyside2_example](https://github.com/friedererdmann/blender_pyside2_example) by friedererdmann
+
 ## Requirements
 * PySide2
 
@@ -18,6 +20,8 @@ main.register()
 ![panel](./img/window.png)
 
 
-## References
-* https://blenderartists.org/t/parent-pyqt-window-widget-to-blenders-window/700722
-* https://github.com/friedererdmann/blender_pyside2_example 
+## Code used in this repository
+* [blender_pyside2_example](https://github.com/friedererdmann/blender_pyside2_example) : Apache-2.0 License <br>
+    © friedererdmann <br>
+* https://blenderartists.org/t/parent-pyqt-window-widget-to-blenders-window/700722 <br>
+    © pistiwique <br>
