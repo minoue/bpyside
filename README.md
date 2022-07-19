@@ -8,7 +8,13 @@ For more advanced setup, you may take a look [blender_pyside2_example](https://g
 * PySide2
 
 ## Install
-Copy download the repsoitory to Blender addon directory (eg. in mac, /Users/USER/Library/Application Support/Blender/3.2/scripts/addons)
+
+### Install PySide2
+If you already have PySide2 on your system, you may modify your PYTHONPATH and run Blender from terminal, or make a [startup file](https://docs.blender.org/api/current/info_overview.html) and modify sys.path.
+You may also install pip to blender and install PySide2 to Blender's site-package.
+
+### Install this code
+Download and copy the repsoitory to Blender addon directory (eg. in mac, /Users/USER/Library/Application Support/Blender/3.2/scripts/addons)
 
 This is not addon (for now). So create a new text in the Scripting tab and run the following command. 
 
