@@ -1,5 +1,6 @@
 import bpy
 import sys
+import platform
 
 from PySide2 import QtWidgets, QtCore
 from importlib import reload
@@ -7,6 +8,8 @@ from . import window
 from . import theme
 
 reload(theme)
+
+OS = platform.system()
 
 
 class PYSIDE_PT_tools_my_panel(bpy.types.Panel):
@@ -61,9 +64,12 @@ class PYSIDE_OT_display_window(bpy.types.Operator):
         self.app.setStyleSheet(theme.STYLE_SHEET)
         self.widget = window.MyWindow()
 
-        wm = context.window_manager
-        self._timer = wm.event_timer_add(1 / 120, window=context.window)
-        context.window_manager.modal_handler_add(self)
+        if OS == "Darwin":
+            pass
+        elif OS == "Linux":
+            wm = context.window_manager
+            self._timer = wm.event_timer_add(1 / 120, window=context.window)
+            context.window_manager.modal_handler_add(self)
 
         return {'RUNNING_MODAL'}
 
